@@ -9,7 +9,9 @@ export default defineConfig({
     tsconfigPaths(),
     tailwindcss(),
     tanstackStart({
-      target: "vercel",
+      spa: {
+        enabled: true,
+      },
     }),
     viteReact(),
   ],
